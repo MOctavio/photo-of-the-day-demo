@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Photo of the Day from NatGeo</title>
-  </head>
-  <body>
-    <section id="image"></section>
-    <section id="description"></section>
-    <section id="credit"></section>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="layout" class="pure-g">
+        <section class="sidebar pure-u-1-4">
+            <article class="header">
+                <h1 class="brand-title">Photo of the Day</h1>
+                <p class="brand-tagline">Visit on <a href="http://photography.nationalgeographic.com/photography/photo-of-the-day/" target="_blank">National Geographic's website.</a></p>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="https://github.com/MOctavio" target="_blank">Github Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="https://github.com/sterlingw/Nat-Geo-Photo-of-the-Day-API" target="_blank">NatGeoApi</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="description"></p>
+                <p id="credit"></p>
+            </article>
+        </section>
+        <section class="content pure-u-3-4">
+            <article id="image" class="pure-u-1"></article>
+        </section>
+    </section>
 
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
     <script>
-      System.import('lib/main')
+        System.import('lib/main')
     </script>
-  </body>
+</body>
+
 </html>
