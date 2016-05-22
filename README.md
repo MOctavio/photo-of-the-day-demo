@@ -12,8 +12,10 @@ Project build using [jspm](https://www.npmjs.com/package/jspm)
 ## Running
  To run the app just type the following commands:
 
- ```
- npm install -g live-server
-npm install
+```
+npm install -g live-server
+npm install -g jspm
+jspm install
 live-server
- ```
+
+```
